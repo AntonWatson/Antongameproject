@@ -16,7 +16,7 @@
  <objectgroup name="objects"/>
  <layer name="Colisiones" width="32" height="32">
   <data encoding="base64" compression="zlib">
-   eJztlkkKwzAMRXOR3v8kbaFdd153Bu+aThD6DQkYo6iRLWMX+uEtYjn+AklOquqvkjUGEzDN5L8AS7DK5L8HB3DM5H8DNbhn8v9VjQrw7whVzOxp+MfMntTftLiiZo/a1+dfC/ybFlfU7FH7XHH5mS9xDXH5NUScyiV0zQyMuc9UrpI1d0YaLzYD8573uRpKxM3IFuyUfKzWYOOtcd+nC7gq+p/A2Vvjvk8v8Fb0f4Cn4nmd7B2R8z/H+lN9RNWbk9vvEm8L1UdUvTnF9DvVR9J6a/e7VNr97iukvppna99n0rNT1nfI2Snrm7p3StUH/F50SQ==
+   eJztltkKwjAQRfsj/v+XqKDP7s/WDfJm3aB4Ay0MYTo6yUDqcuA8NGm9gZlpLYo/fWYIR3CcKX8G53CRKX8LS7jLlH+GFbxkyv9UBj3Ib40lZfYs8lNmT5vvGinc7HH3deVXivy6kcLNHncfRTqfe7FvgXS+mtnnzhK75t7co9fcWTVrdEbqYG8Cpx3PSzXUIM3IGm6McjxLuArWpO/TEZ4M8/fwEKxJ36c7fBjmX+HN8Pda/Dsi5/8cn8/1EVdvCdrvmmwv10dcvSVS+p3rI229rftdi3W/h8TU1xLr95mWb6/vL/IEL4ltNQ==
   </data>
  </layer>
  <layer name="Capa de patrones 3" width="32" height="32">
