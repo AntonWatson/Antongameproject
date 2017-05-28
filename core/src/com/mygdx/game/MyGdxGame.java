@@ -169,11 +169,11 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		TextureMapObject character = (TextureMapObject)tiledMap.getLayers().get("objects").getObjects().get(0);
 		int characterWidth = character.getTextureRegion().getRegionWidth();
 		int characterHeight = character.getTextureRegion().getRegionHeight();
-		float oldX = 0;
-		float oldY = 0;
+		
+		float oldX = Xposition;
+		float oldY = Yposition;
 
 		if(Math.abs(Xposition - targetXpos)< 3) {
-			oldX = Xposition;
 			Xposition = targetXpos;		
 		} else if(Xposition > targetXpos){
 			oldX = Xposition;
@@ -184,7 +184,6 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		}
 
 		if(Math.abs(Yposition - targetYpos)< 3) {
-			oldY = Yposition;
 			Yposition = targetYpos;
 		} else  if(Yposition > targetYpos) {
 			oldY = Yposition;
@@ -206,11 +205,17 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		} else if((Yposition + characterHeight) > mapPixelHeight){
 			Yposition = mapPixelHeight-characterHeight;
 		}	
-		if (collision((int)Xposition,(int)Yposition)){
+		
+		if ((collision((int)Xposition,(int)Yposition)) ||
+			(collision((int)Xposition+characterWidth-2,(int)Yposition)) ||
+			(collision((int)Xposition,(int)Yposition+characterHeight-2)) ||
+			(collision((int)Xposition+characterWidth-2,(int)Yposition+characterHeight-2)))
+		{
 			
 			Xposition = (int)oldX;
 			Yposition = (int)oldY;
-			
+			targetXpos = Xposition;
+			targetYpos = Yposition;
 		}
 		Vector3 position = new Vector3(Xposition,Yposition,0);
 		character.setX((float)position.x);
