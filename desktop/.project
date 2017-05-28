@@ -24,7 +24,7 @@
 		<link>
 			<name>assets</name>
 			<type>2</type>
-			<location>/Users/user1/Workspace/anton/Antongameproject/android/assets</location>
+			<locationURI>PARENT-1-PROJECT_LOC/android/assets</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
